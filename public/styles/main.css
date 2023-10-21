@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-color: FFD2D7;
+}
+.nav-bar{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    background-color: 9288F8;
+    height: 10%;
+}
+.nav-btn{
+    margin-left: 10px;
+    font-size: 20px;
+    color: azure;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+footer p{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.container div{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 25rem;
+
+}
+.container form{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 25rem;
+
+}
+.container h1{
+    background-color: 9288F8;
+    border-radius: 5px;
+    width: 25rem;
+    text-align: center;
+    font-size: 2rem;
+    color: azure;
+    height: 3rem;
+
+}
+.container2{
+    display: flex;
+}
+.container2 .label{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.container2 .checkbox{
+    margin: 20px;
+}
+.container2 .input{
+    width:max-content;
+    margin-right: 10px;
+    align-self: stretch;
+    width: 20rem;
+    margin-left: 10px;
+}
+.container2 button{
+    height: 50px;
+    width: 50px;
+    border: transparent;
+    color: azure;
+    background-color: 9288F8;
+    border-radius: 50%;
+
+}
+.strikethrough:checked + label{
+    text-decoration:line-through;
+    
+}
+

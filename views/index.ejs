@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs")  %>
+<div class="container">
+    <h1><%= head %></h1></div>
+</div>
+<% if(route === "/") { %>
+    <div action="/" class="container">
+        <% for ( let i = 0; i<list.length; i++ ) {%>
+            <div class="container2">
+                <input type="checkbox" id="vehicle1" class="checkbox strikethrough" name="vehicle1" value="Bike">
+                <label for="vehicle1" class="label"><%= list[i]  %></label>
+            </div>
+        <% } %>
+        <form action="/" method="POST" class="container2">
+            <input type="text" name="newTask" class="input">
+            <button type="submit" name="list">+</button>
+        </form>
+    </div>
+<% } %>
+<% if(route === "/work") { %>
+<div action="/work" class="container">
+    <% for ( let i = 0; i<list.length; i++ ) {%>
+        <div class="container2">
+            <input type="checkbox" id="vehicle1" class="checkbox strikethrough" name="vehicle1" value="Bike">
+            <label for="vehicle1" class="label"> <%= list[i]  %></label>
+        </div>
+    <% } %>
+    <form action="/work" method="POST" class="container2">
+        <input type="text" name="newTask" class="input">
+        <button type="submit" name="list">+</button>
+    </form>
+</div>
+<% } %>
+<%- include("partials/footer.ejs")  %>
